@@ -26,10 +26,10 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <i class="fas fa-search"></i>
-                <a href="#" class="btn-login">Login / Sign Up</a>
-                <a href="#" class="btn-cta">Book Demo</a>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </header>
@@ -128,57 +128,70 @@
         </div>
     </main>
 
-<footer class="footer-section">
-    <div class="footer-container">
-        <div class="footer-column contact-address">
-            <div class="logo">
-                <img src="./blogs/assets/logo_white.png" alt="Nizcare Logo" style="height: 80px;">
-            </div>
-            <h3>CONTACT ADDRESS</h3>
-            <p><i class="fas fa-map-marker-alt"></i> Trichy – Chennai Trunk Road, Siruganur, Trichy-621105, Tamilnadu, India</p>
-            <p><i class="fas fa-map-marker-alt"></i> 100,Jalan Sultan, #08/06, Sultan Plaza Singapore</p>
-        </div>
-        <div class="footer-column useful-links">
-            <h3>USEFUL LINK</h3>
-            <ul>
-                <li><i class="fas fa-angle-right"></i> <a href="#">About Us</a></li>
-                <li><i class="fas fa-angle-right"></i> <a href="#">Our Client</a></li>
-                <li><i class="fas fa-angle-right"></i> <a href="#">Request Demo</a></li>
-            </ul>
-        </div>
-        <div class="footer-column get-in-touch">
-            <h3>GET IN TOUCH</h3>
-            <p><i class="fas fa-phone-alt"></i> +91 87895 37313</p>
-            <p><i class="fas fa-envelope"></i> support@nizcare.com</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/company/nizcare/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/niz_care/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/nizcareglobal"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@nizcare9113"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom-bar">
+    <footer class="footer-section">
         <div class="footer-container">
-            <nav class="footer-nav-links">
-                <a href="#">About Us</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Help & FAQs</a>
-            </nav>
+            <!-- Consolidated Contact & Logo Section -->
+            <div class="footer-column contact-details">
+                <div class="logo">
+                    <img src="./blogs/assets/logo_white.png" alt="Nizcare Logo" style="height: 80px;">
+                </div>
+                <h3>CONTACT US</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Trichy – Chennai Trunk Road, Siruganur, Trichy-621105, Tamilnadu, India</p>
+                <p><i class="fas fa-map-marker-alt"></i> 100,Jalan Sultan, #08/06, Sultan Plaza Singapore</p>
+                <p><i class="fas fa-phone-alt"></i> +91 87895 37313</p>
+                <p><i class="fas fa-envelope"></i> support@nizcare.com</p>
+            </div>
+            <!-- Useful Links Section -->
+            <div class="footer-column useful-links">
+                <h3>USEFUL LINK</h3>
+                <ul>
+                    <li><i class="fas fa-angle-right"></i> <a href="#">About Us</a></li>
+                    <li><i class="fas fa-angle-right"></i> <a href="#">Our Client</a></li>
+                    <li><i class="fas fa-angle-right"></i> <a href="#">Request Demo</a></li>
+                </ul>
+            </div>
+            <!-- Stay Connected Section -->
+            <div class="footer-column social-media">
+                <h3>STAY CONNECTED</h3>
+                <p>Follow us on social media for the latest updates.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="footer-disclaimer">
-        <div class="footer-container">
-            <p>By using our site, you agree to the Nizcare Terms and Conditions. Nizcare does not provide medical advice, diagnosis or treatment. The information provided on this site is designed to support, not replace, the relationship that exists between a patient/site visitor and his/her existing physician.</p>
+        
+        <!-- Footer Bottom Bar with Copyright -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container">
+                <nav class="footer-nav-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Help & FAQs</a>
+                </nav>
+                <p class="copyright-text">© 2023 Nizcare. All Rights Reserved.</p>
+            </div>
         </div>
-    </div>
-    <a href="https://wa.me/919789537313" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-</footer>
-
-    <script src="blog-index-script.js"></script>
+        
+        <div class="footer-disclaimer">
+            <div class="footer-container">
+                <p>By using our site, you agree to the Nizcare Terms and Conditions. Nizcare does not provide medical advice, diagnosis or treatment. The information provided on this site is designed to support, not replace, the relationship that exists between a patient/site visitor and his/her existing physician.</p>
+            </div>
+        </div>
+        
+        <a href="https://wa.me/919789537313" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
