@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blogs | Nizcare</title>
+    <link rel="stylesheet" href="blog-index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Nizcare Logo" style="height: 60px;">
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <i class="fas fa-search"></i>
+                <a href="#" class="btn-login">Login / Sign Up</a>
+                <a href="#" class="btn-cta">Book Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title-banner">
+        <div class="banner-content">
+            <h1>Our Blogs</h1>
+            <p>Stay up-to-date with the latest in health, wellness, and corporate well-being.</p>
+        </div>
+    </section>
+
+    <main class="main-content-container">
+        <div class="blog-grid-container">
+            <div class="blog-posts-list">
+                
+                <div class="blog-post-card">
+                    <img src="./blogs/assets/image.png" alt="Blog post image 4">
+                    <div class="card-content">
+                        <span class="category-tag" data-category="Corporate">Corporate</span>
+                        <h3>Why Employee Wellness is More Than a Buzzword</h3>
+                        <p class="post-meta">By Jane Doe | <span class="read-time">7 min read</span></p>
+                        <p>We dive deep into the tangible benefits of investing in your employees' wellness.</p>
+                        <a href="./blogs/blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-post-card">
+                    <img src="./blogs/assets/image1.png" alt="Blog post image 1">
+                    <div class="card-content">
+                        <span class="category-tag" data-category="Mental Health">Mental Health</span>
+                        <h3>How to Manage Stress at Work</h3>
+                        <p class="post-meta">By Jane Doe | <span class="read-time">5 min read</span></p>
+                        <p>Learn effective strategies to combat workplace stress and improve your mental well-being.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-post-card">
+                    <img src="./blogs/assets/image2.png" alt="Blog post image 2">
+                    <div class="card-content">
+                        <span class="category-tag" data-category="Nutrition">Nutrition</span>
+                        <h3>Healthy Eating for Busy Professionals</h3>
+                        <p class="post-meta">By John Smith | <span class="read-time">8 min read</span></p>
+                        <p>Simple and quick nutrition tips to help you stay healthy despite a busy schedule.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-post-card">
+                    <img src="./blogs/assets/image3.png" alt="Blog post image 3">
+                    <div class="card-content">
+                        <span class="category-tag" data-category="Productivity">Productivity</span>
+                        <h3>Boosting Focus with Mindful Breaks</h3>
+                        <p class="post-meta">By Jane Doe | <span class="read-time">6 min read</span></p>
+                        <p>Discover how short mindful breaks can dramatically increase your focus and productivity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="sidebar">
+                <div class="widget search-widget">
+                    <h3>Search Blog</h3>
+                    <div class="search-input-container">
+                        <input type="text" id="blog-search" placeholder="Search blog posts...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="widget categories-widget">
+                    <h3>Categories</h3>
+                    <div class="category-list">
+                        <button class="category-btn active" data-filter="all">All</button>
+                        <button class="category-btn" data-filter="Mental Health">Mental Health</button>
+                        <button class="category-btn" data-filter="Nutrition">Nutrition</button>
+                        <button class="category-btn" data-filter="Productivity">Productivity</button>
+                        <button class="category-btn" data-filter="Corporate">Corporate</button>
+                    </div>
+                </div>
+                <div class="widget tags-widget">
+                    <h3>Popular Tags</h3>
+                    <div class="tag-list">
+                        <span class="tag" data-tag="Wellness">#Wellness</span>
+                        <span class="tag" data-tag="Health">#Health</span>
+                        <span class="tag" data-tag="Corporate">#Corporate</span>
+                        <span class="tag" data-tag="Stress">#Stress</span>
+                        <span class="tag" data-tag="Workplace">#Workplace</span>
+                    </div>
+                </div>
+                <div class="widget cta-widget">
+                    <h3>Want a Free Health Checkup?</h3>
+                    <p>Book a consultation with our experts today!</p>
+                    <a href="#" class="btn-cta">Book Now</a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-column about-nizcare">
+                <p>Nizcare is dedicated to providing innovative health and wellness solutions to individuals and businesses.</p>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h3>Contact Info</h3>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: info@nizcare.com</p>
+                <p>Address: 123 Health Ave, Wellness City</p>
+            </div>
+            <div class="footer-column social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="blog-index-script.js"></script>
+</body>
+</html>
