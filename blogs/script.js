@@ -43,3 +43,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const url = encodeURIComponent(window.location.href);
+    const title = encodeURIComponent(document.title);
+
+    const shareUrls = {
+        whatsapp: `https://api.whatsapp.com/send?text=${title}%0A%20${url}`,
+        linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${title}`,
+        facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+        twitter: `https://twitter.com/intent/tweet?url=${url}&text=${title}%0A${url}`
+    };
+
+    document.querySelector('.share-whatsapp').href = shareUrls.whatsapp;
+    document.querySelector('.share-linkedin').href = shareUrls.linkedin;
+    document.querySelector('.share-facebook').href = shareUrls.facebook;
+    document.querySelector('.share-twitter').href = shareUrls.twitter;
+    
+    // Handle the Copy Link functionality separately
+    const copyLinkBtn = document.querySelector('.copy-link');
+    copyLinkBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        navigator.clipboard.writeText(decodeURIComponent(url)).then(() => {
+            alert('Link copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    });
+});
